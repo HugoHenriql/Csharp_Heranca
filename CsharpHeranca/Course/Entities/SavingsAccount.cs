@@ -15,5 +15,9 @@ namespace Course.Entities
             {
                 Balance += Balance * InterestRate;
             }
+
+            public override void  Withdraw(double mount){
+                Balance -= amount;
+            }
        }
     }
